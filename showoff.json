@@ -1,6 +1,8 @@
 { 
   "name": "Content Delivery Networks", 
   "sections": [ 
-    {"section":"01-presentacion"}
+    {"section":"01-presentacion"},
+    {"section":"02-laboratorio"},
+    {"section":"03-labioguia"}
   ]
 }

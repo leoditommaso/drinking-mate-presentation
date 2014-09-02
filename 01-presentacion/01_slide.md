@@ -1,6 +1,6 @@
 !SLIDE center
 # Content Delivery Networks (CDN) #
-## Redes y Servicios Avanzados en Internet ##
+## Introducción ##
 
 
 !SLIDE smbullets transition=uncover
@@ -24,7 +24,7 @@ href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Licencia
 Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
 
 
-!SLIDE smbullets incremental
+!SLIDE smbullets transition=uncover
 # Temas
 * ¿Qué es una CDN?
 * Funcionamiento de una CDN.
@@ -34,8 +34,6 @@ Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
   * Reenvío a la CDN.
   * Carga del contenido en la CDN.
   * Intercepción de los requerimientos de usuario.
-* Laboratorio.
-* Caso de análisis: La Bioguía.
 * Referencias.
 
 
@@ -54,8 +52,8 @@ Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
 * Acceso veloz al contenido.
 * Escalabilidad y disponibilidad.
 * Reducción del uso de los enlaces de manera global.
-* Fidelización de los usuarios.
-* Disminuición del uso de los recursos en el sistema de origen.
+* Finalización de los usuarios.
+* Disminución del uso de los recursos en el sistema de origen.
 
 !SLIDE smbullets transition=uncover
 # Funcionamiento de una CDN #
@@ -146,3 +144,7 @@ Existen dos maneras para identificar los servidores más cercanos:
 * Utilizando sincronización periódica.
 * Disparando orden de actualización.
 * Por medio de servidores proxy caché.
+
+
+!SLIDE center
+## ¿Preguntas? ##
