@@ -1,27 +1,19 @@
 !SLIDE center
-# Content Delivery Networks (CDN) #
+# Content Delivery Networks #
 ## Introducción ##
 
 
-!SLIDE smbullets transition=uncover
-# Content Delivery Networks (CDN) #
+!SLIDE transition=uncover
+# Content Delivery Networks #
 <br>
 Leandro Di Tommaso
-  [![leandro.ditommaso@mikroways.net](mail.png)](mailto:leandro.ditommaso@mikroways.net "leandro.ditommaso@mikroways.net")
-  [![twitter](twitter.png)](https://twitter.com/leoditommaso "twitter")
-  [![github](github.png)](https://github.com/leoditommaso "github")
 
-<br>
-<a rel="license"
-  href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es"><img
-alt="Licencia Creative Commons" style="border-width:0"
-src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span
-xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
-Content Delivery Networks (CDN)</span> por <span xmlns:cc="http://creativecommons.org/ns#" 
-property="cc:attributionName">Leandro Di Tommaso</span> se encuentra bajo
-una <a rel="license"
-href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Licencia
-Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
+[![leandro.ditommaso@mikroways.net](email.png)](mailto:leandro.ditommaso@mikroways.net "leandro.ditommaso@mikroways.net")
+[![mikroways](wordpress.png)](http://www.mikroways.net "mikroways")
+[![github](github.png)](https://github.com/leoditommaso "github")
+[![linkedin](linkedin.png)](http://ar.linkedin.com/in/leandroditommaso "linkedin")
+[![twitter](twitter.png)](https://twitter.com/leoditommaso "twitter")
+[![licencia](creative-common.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es "licencia")
 
 
 !SLIDE smbullets transition=uncover
@@ -52,21 +44,25 @@ Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Unported</a>.
 * Acceso veloz al contenido.
 * Escalabilidad y disponibilidad.
 * Reducción del uso de los enlaces de manera global.
-* Finalización de los usuarios.
+* Fidelización de los usuarios.
 * Disminución del uso de los recursos en el sistema de origen.
 
 !SLIDE smbullets transition=uncover
-# Funcionamiento de una CDN #
+# Funcionamiento sin CDN #
 
-![acceso-clientes](CDN_LL_acceso_clientes.png)
+![sin-cdn](CDN_sin_CDN.png)
+
+
+!SLIDE smbullets transition=uncover
+# Funcionamiento con CDN #
+
+![con-cdn](CDN_con_CDN.png)
 
 
 !SLIDE smbullets transition=uncover
 # Servidores más cercanos #
 
-Se debe dirigir al cliente al servidor más conveniente.
-
-Existen dos maneras para identificar los servidores más cercanos:
+Se debe dirigir al cliente al servidor más conveniente. Existen dos maneras para identificar los servidores más cercanos:
 
 * Utilizando Anycast.
 * Utilizando DNS.
@@ -74,11 +70,12 @@ Existen dos maneras para identificar los servidores más cercanos:
 
 !SLIDE smbullets transition=uncover
 # Utilizando Anycast #
-![anycast](anycast.png)
+![anycast](CDN_Anycast.png)
 
 
 !SLIDE smbullets transition=uncover
 # Utilizando DNS #
+![dns](CDN_DNS.png)
 
 
 !SLIDE smbullets transition=uncover
@@ -91,7 +88,7 @@ Existen dos maneras para identificar los servidores más cercanos:
 
 !SLIDE smbullets transition=uncover
 # Problemas con DNS por origen #
-![dns](dns.png)
+![dns_proxy](CDN_resolucion_DNS_proxy.png)
 
 
 !SLIDE smbullets transition=uncover
@@ -132,7 +129,6 @@ Existen dos maneras para identificar los servidores más cercanos:
 
 * Peticiones llegan al servidor de origen.
 * Determinados recursos deben buscarse en la CDN.
-
 * Posibles soluciones:
   * Redirección basada en la extensión. 
   * Dominio diferente para la CDN.
@@ -146,5 +142,15 @@ Existen dos maneras para identificar los servidores más cercanos:
 * Por medio de servidores proxy caché.
 
 
+!SLIDE smbullets transition=uncover
+# Referencias #
+
+* [Esta presentación]()
+* [Client subnet in DNS request](http://tools.ietf.org/id/draft-vandergaast-edns-client-subnet-02.html)
+* [How to test your CDN before go live](http://www.cdnplanet.com/blog/how-test-your-cdn-before-go-live/)
+* [Rolling your own CDN](http://www.scalescale.com/rolling-your-own-cdn-build-a-3-continent-cdn-for-25-in-1-hour/)
+* [Which CDNs support edns-client-subnet](http://www.cdnplanet.com/blog/which-cdns-support-edns-client-subnet/)
+
+
 !SLIDE center
-## ¿Preguntas? ##
+# ¿Preguntas? #
