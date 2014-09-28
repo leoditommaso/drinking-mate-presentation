@@ -116,11 +116,13 @@
 Leandro Di Tommaso</p>
 
 <p><a href="mailto:leandro.ditommaso@mikroways.net" title="leandro.ditommaso@mikroways.net"><img src="./file/01-presentacion/email.png" alt="leandro.ditommaso@mikroways.net"></a>
-<a href="http://www.mikroways.net" title="mikroways"><img src="./file/01-presentacion/wordpress.png" alt="mikroways"></a>
+<a href="http://www.mikroways.net" title="mikroways"><img src="./file/01-presentacion/mikroways.png" alt="mikroways"></a>
 <a href="https://github.com/leoditommaso" title="github"><img src="./file/01-presentacion/github.png" alt="github"></a>
 <a href="http://ar.linkedin.com/in/leandroditommaso" title="linkedin"><img src="./file/01-presentacion/linkedin.png" alt="linkedin"></a>
 <a href="https://twitter.com/leoditommaso" title="twitter"><img src="./file/01-presentacion/twitter.png" alt="twitter"></a>
 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es" title="licencia"><img src="./file/01-presentacion/creative-common.png" alt="licencia"></a></p>
+
+<p>Esta presentacion: <a href="http://leoditommaso.github.io/drinking-mate-presentation/">http://leoditommaso.github.io/drinking-mate-presentation/</a></p>
 </div>
 </div>
 </body></html><html><body>
@@ -322,7 +324,6 @@ Leandro Di Tommaso</p>
 <h1>Referencias</h1>
 
 <ul>
-<li><a href="">Esta presentación</a></li>
 <li><a href="http://tools.ietf.org/id/draft-vandergaast-edns-client-subnet-02.html">Client subnet in DNS request</a></li>
 <li><a href="http://www.cdnplanet.com/blog/how-test-your-cdn-before-go-live/">How to test your CDN before go live</a></li>
 <li><a href="http://www.scalescale.com/rolling-your-own-cdn-build-a-3-continent-cdn-for-25-in-1-hour/">Rolling your own CDN</a></li>
@@ -792,20 +793,94 @@ del sistema operativo.</li>
 </body></html><html><body>
 <div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
 <div class="content smbullets" ref="03-labioguia/01_slide/6">
-<h1>Un cliente feliz</h1>
+<h1>No para de crecer...</h1>
 
-<p>Con todo el trabajo realizado se logran alcanzar los 4.000 visitantes
-simultáneos, pero el techo cambió.</p>
+<p>Con los cambios realizados, se logran alcanzar los 4.000 visitantes simultáneos, 
+pero el techo cambió.</p>
 
 <ul>
 <li>Se satura el ancho de banda al tiempo que la memoria y la capacidad de cómputo
-del servidor se desperdician.</li>
+del servidor no se aprovechan.</li>
+<li>La mayor cantidad de tráfico son contenidos estáticos (imágenes, hojas de
+estilo, javascripts).</li>
+<li>Hora de que la CDN demuestre lo que promete.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/7">
+<h1>Implementación de la CDN</h1>
+
+<ul>
+<li>Elección del proveedor: <a href="http://www.cdn77.com">CDN 77</a>
+</li>
+<li>Dominio diferente para la CDN.</li>
+<li>Plugin para Wordpress: W3 Total Cache.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/8">
+<h1>Consumo 48 horas</h1>
+
+<p><img src="./file/03-labioguia/cdn_graph_48.png" alt="Consumo 48 horas"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/9">
+<h1>Consumo 1 mes</h1>
+
+<p><img src="./file/03-labioguia/cdn_graph_month.png" alt="Consumo 1 mes"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/10">
+<h1>Mapa de accesos</h1>
+
+<p><img src="./file/03-labioguia/cdn_map.png" alt="Mapa de accesos"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/11">
+<h1>Resultados</h1>
+
+<ul>
+<li>El día de la implementación se alcanzaron 15.000 simultáneas.</li>
+<li>Pico de consumo en la CDN de 411 Mbps.</li>
+<li>El ancho de banda al servidor bajó a 6 Mbps.</li>
+<li>Recursos (memoria y CPU) se convirtieron en el nuevo límite.</li>
+<li>Necesario disminuir los enlaces en hora pico para soportar la carga (¡mientras
+se consigue financiamiento!).</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/12">
+<h1>¿Y ahora?</h1>
+
+<ul>
+<li>La CDN permitió crecer exponencialmente, el límite quedó nuevamente del lado
+del servidor de origen.</li>
+<li>Se debe aumentar la capacidad del servidor de origen.
+
+<ul>
+<li>Un servidor más potente.</li>
+<li>Varios servidores en cluster.</li>
+</ul>
+</li>
+<li>Actualmente en proceso de migración a Amazon.</li>
 </ul>
 </div>
 </div>
 </body></html><html><body>
 <div id="03-labioguia/01_slide" class="slide center" data-transition="none">
-<div class="content center" ref="03-labioguia/01_slide/7">
+<div class="content center" ref="03-labioguia/01_slide/13">
 <h1>¿Preguntas?</h1>
 </div>
 </div>
