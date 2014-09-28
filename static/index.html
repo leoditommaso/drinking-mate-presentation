@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Content Delivery Networks</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+
+  <link rel="stylesheet" href=".//css/reset.css" type="text/css"/>
+
+  
+
+  <link type="text/css" href=".//css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href=".//css/sh_style.css" rel="stylesheet" />
+  <link type="text/css" href=".//css/tipsy.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href=".//css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src=".//js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src=".//js/jquery-print.js"></script>
+  <script type="text/javascript" src=".//js/jquery.batchImageLoad.js"></script>
+  <script type="text/javascript" src=".//js/jquery.parsequery.min.js"></script>
+  <script type="text/javascript" src=".//js/jquery.doubletap-0.1.js"></script>
+  <script type="text/javascript" src=".//js/jquery.tipsy.js"></script>
+
+  <script type="text/javascript" src=".//js/fg.menu.js"></script>
+  <script type="text/javascript" src=".//js/showoff.js"></script>
+  <script type="text/javascript" src=".//js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src=".//js/sh_main.min.js"></script>
+  <script type="text/javascript" src=".//js/core.js"></script>
+  <script type="text/javascript" src=".//js/showoffcore.js"></script>
+  <script type="text/javascript" src=".//js/coffee-script.js"></script>
+
+  
+    
+  
+
+  
+    
+    <link rel="stylesheet" href=".//file/base.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+    $(function(){
+      setupPreso(false, './');
+    });
+
+    editUrl  = "";
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+<a tabindex="1" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="stylemenu"><span class="ui-icon ui-icon-triangle-1-s"></span>styles</a>
+<div id="stylepicker" class="hidden"></div>
+
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">b</td><td>blank screen</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">g</td><td>toggle follow</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+    <tr><td class="key">s</td><td>choose style</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso"><center>loading presentation...</center></div>
+<div id="footer">
+  <span id="followMode"></span>
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+  <span id="slideFilename"></span>
+  <img id="disconnected" src=".//css/disconnected.png" />
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<html><body>
+<div id="01-presentacion/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="01-presentacion/01_slide/1">
+<h1>Content Delivery Networks</h1>
+
+<h2>Introducción</h2>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide " data-transition="uncover">
+<div class="content " ref="01-presentacion/01_slide/2">
+<h1>Content Delivery Networks</h1>
+
+<p><br>
+Leandro Di Tommaso</p>
+
+<p><a href="mailto:leandro.ditommaso@mikroways.net" title="leandro.ditommaso@mikroways.net"><img src="./file/01-presentacion/email.png" alt="leandro.ditommaso@mikroways.net"></a>
+<a href="http://www.mikroways.net" title="mikroways"><img src="./file/01-presentacion/wordpress.png" alt="mikroways"></a>
+<a href="https://github.com/leoditommaso" title="github"><img src="./file/01-presentacion/github.png" alt="github"></a>
+<a href="http://ar.linkedin.com/in/leandroditommaso" title="linkedin"><img src="./file/01-presentacion/linkedin.png" alt="linkedin"></a>
+<a href="https://twitter.com/leoditommaso" title="twitter"><img src="./file/01-presentacion/twitter.png" alt="twitter"></a>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es" title="licencia"><img src="./file/01-presentacion/creative-common.png" alt="licencia"></a></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/3">
+<h1>Temas</h1>
+
+<ul>
+<li>¿Qué es una CDN?</li>
+<li>Funcionamiento de una CDN.</li>
+<li>Aspectos técnicos de una CDN.
+
+<ul>
+<li>Contenido estático vs. contenido dinámico.</li>
+<li>Identificación de los servidores más cercanos.</li>
+<li>Reenvío a la CDN.</li>
+<li>Carga del contenido en la CDN.</li>
+<li>Intercepción de los requerimientos de usuario.</li>
+</ul>
+</li>
+<li>Referencias.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/4">
+<h1>¿Qué es una CDN?</h1>
+
+<ul>
+<li>Sistema de servidores ubicados en diferentes lugares del mundo.</li>
+<li>Sirve contenido web estático.</li>
+<li>Selección del servidor por cercanía geográfica.</li>
+<li>Puede devolver versiones cacheadas del sitio web.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/5">
+<h1>Beneficios de usar una CDN</h1>
+
+<ul>
+<li>Acceso veloz al contenido.</li>
+<li>Escalabilidad y disponibilidad.</li>
+<li>Reducción del uso de los enlaces de manera global.</li>
+<li>Fidelización de los usuarios.</li>
+<li>Disminución del uso de los recursos en el sistema de origen.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/6">
+<h1>Funcionamiento sin CDN</h1>
+
+<p><img src="./file/01-presentacion/CDN_sin_CDN.png" alt="sin-cdn"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/7">
+<h1>Funcionamiento con CDN</h1>
+
+<p><img src="./file/01-presentacion/CDN_con_CDN.png" alt="con-cdn"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/8">
+<h1>Servidores más cercanos</h1>
+
+<p>Se debe dirigir al cliente al servidor más conveniente. Existen dos maneras para identificar los servidores más cercanos:</p>
+
+<ul>
+<li>Utilizando Anycast.</li>
+<li>Utilizando DNS.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/9">
+<h1>Utilizando Anycast</h1>
+
+<p><img src="./file/01-presentacion/CDN_Anycast.png" alt="anycast"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/10">
+<h1>Utilizando DNS</h1>
+
+<p><img src="./file/01-presentacion/CDN_DNS.png" alt="dns"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/11">
+<h1>DNS por origen</h1>
+
+<ul>
+<li>Implementado con vistas.</li>
+<li>Con parche GeoIP para BIND.</li>
+<li>Utilizando eDNS client-subnet.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/12">
+<h1>Problemas con DNS por origen</h1>
+
+<p><img src="./file/01-presentacion/CDN_resolucion_DNS_proxy.png" alt="dns_proxy"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/13">
+<h1>Ventajas de anycast</h1>
+
+<ul>
+<li>Rápida adaptación frente a fallos.</li>
+<li>Mejor selección del servidor más cercano.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/14">
+<h1>Desventajas de anycast</h1>
+
+<ul>
+<li>Implementación y administración complejas.</li>
+<li>Requiere conocimientos de BGP.</li>
+<li>Mayor costo, menor flexibilidad.</li>
+<li>Difícil agregar nuevas ubicaciones.</li>
+<li>Dependencia de terceros.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/15">
+<h1>Ventajas de DNS</h1>
+
+<ul>
+<li>Funcionamiento simple y fácil de entender.</li>
+<li>Puede implementarse sin intervención de terceros.</li>
+<li>Bajo costo.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/16">
+<h1>Desventajas de DNS</h1>
+
+<ul>
+<li>Problemas con servidores "proxy".</li>
+<li>Caché de DNS.</li>
+<li>Respuesta ante fallos.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/17">
+<h1>Reenvío a la CDN</h1>
+
+<ul>
+<li>Peticiones llegan al servidor de origen.</li>
+<li>Determinados recursos deben buscarse en la CDN.</li>
+<li>Posibles soluciones:
+
+<ul>
+<li>Redirección basada en la extensión. </li>
+<li>Dominio diferente para la CDN.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/18">
+<h1>Carga del contenido en la CDN</h1>
+
+<ul>
+<li>Utilizando sincronización periódica.</li>
+<li>Disparando orden de actualización.</li>
+<li>Por medio de servidores proxy caché.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="01-presentacion/01_slide/19">
+<h1>Referencias</h1>
+
+<ul>
+<li><a href="">Esta presentación</a></li>
+<li><a href="http://tools.ietf.org/id/draft-vandergaast-edns-client-subnet-02.html">Client subnet in DNS request</a></li>
+<li><a href="http://www.cdnplanet.com/blog/how-test-your-cdn-before-go-live/">How to test your CDN before go live</a></li>
+<li><a href="http://www.scalescale.com/rolling-your-own-cdn-build-a-3-continent-cdn-for-25-in-1-hour/">Rolling your own CDN</a></li>
+<li><a href="http://www.cdnplanet.com/blog/which-cdns-support-edns-client-subnet/">Which CDNs support edns-client-subnet</a></li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="01-presentacion/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="01-presentacion/01_slide/20">
+<h1>¿Preguntas?</h1>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="02-laboratorio/01_slide/1">
+<h1>Content Delivery Networks</h1>
+
+<h2>Laboratorio: implementación local</h2>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/2">
+<h1>Temas</h1>
+
+<ul>
+<li>Diseño.</li>
+<li>Implementación.</li>
+<li>Pruebas de funcionamiento.
+
+<ul>
+<li>Verificación de caché.</li>
+<li>Acceso y monitoreo de logs.</li>
+</ul>
+</li>
+<li>Posibles extensiones.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/3">
+<h1>Diseño</h1>
+
+<p><img src="./file/02-laboratorio/CDN_LL_acceso_clientes.png" alt="acceso-clientes"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/4">
+<h1>Diseño</h1>
+
+<p><img src="./file/02-laboratorio/CDN_LL_resolucion_DNS.png" alt="consulta-dns"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/5">
+<h1>Implementación</h1>
+
+<ul>
+<li>Total de 8 máquinas virtuales con Vagrant y Chef Solo.</li>
+<li>Un servidor web con la página www.redes.unlp.</li>
+<li>Un servidor DNS para el dominio redes.unlp.</li>
+<li>Cuatro servidores para formar la CDN.</li>
+<li>Dos clientes para probar el acceso al sitio desde diferentes ubicaciones.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/6">
+<h1>Implementación</h1>
+
+<ul>
+<li>Servidor web:
+
+<ul>
+<li>Sitio web dinámico con Wordpress.</li>
+<li>Nginx, PHP-FPM y MySQL.</li>
+</ul>
+</li>
+<li>Servidor DNS:
+
+<ul>
+<li>Estrategia utilizando vistas.</li>
+<li>BIND.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/7">
+<h1>Implementación de la CDN</h1>
+
+<ul>
+<li>Nginx como proxy reverso y caché.</li>
+<li>Dominio específico para la CDN.</li>
+<li>Recursos no existentes se traen desde el origen y se almacenan en caché.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/8">
+<h1>Asignaciones IP</h1>
+
+<ul>
+<li>Servidor web: 190.205.40.3</li>
+<li>Servidor DNS: 190.205.40.8</li>
+<li>Argentina: 190.205.40.10</li>
+<li>Egipto: 190.205.40.11</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/9">
+<h1>Asignaciones IP</h1>
+
+<ul>
+<li>África: 222.12.25.22</li>
+<li>América: 189.32.120.14</li>
+<li>Asia: 154.23.129.10</li>
+<li>Europa: 105.4.12.3</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/10">
+<h1>Pruebas de funcionamiento</h1>
+
+<ul>
+<li>Verificar los logs y la caché de cada servidor de la CDN y del servidor web.</li>
+<li>Consultar la IP de www.redes.unlp y de static.redes.unlp con el cliente Argentina.</li>
+<li>Acceder con el cliente Argentina a www.redes.unlp y visualizar el sitio web.</li>
+<li>Verificar la caché del servidor de la CDN América.</li>
+<li>Visualizar los logs del servidor web y del servidor de la CDN.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/11">
+<h1>Pruebas de funcionamiento</h1>
+
+<ul>
+<li>Verificar los logs del servidor América y del servidor web.</li>
+<li>Acceder nuevamente con el cliente Argentina a www.redes.unlp y visualizar el sitio.</li>
+<li>Chequear los logs del servidor web y del servidor de la CDN.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/12">
+<h1>Pruebas de funcionamiento</h1>
+
+<ul>
+<li>Verificar los logs y la caché de cada servidor de la CDN y del servidor web.</li>
+<li>Consultar la IP de www.redes.unlp y de static.redes.unlp con el cliente Egipto.</li>
+<li>Acceder con el cliente Egipto a www.redes.unlp y visualizar el sitio web.</li>
+<li>Verificar la caché del servidor de la CDN África.</li>
+<li>Visualizar los logs del servidor web y del servidor de la CDN.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/13">
+<h1>Pruebas de funcionamiento</h1>
+
+<ul>
+<li>Verificar los logs del servidor África y del servidor web.</li>
+<li>Acceder nuevamente con el cliente Egipto a www.redes.unlp y visualizar el sitio.</li>
+<li>Chequear los logs del servidor web y del servidor de la CDN.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/14">
+<h1>Aclaración importante</h1>
+
+<p>Las IP que se muestran en los logs de la presentación fueron modificadas a mano para una visión más real de los accesos. El motivo por el que se hizo esto es que VirtualBox implementa toda la red interna usando NAT y entonces se pierden las direcciones IP originales.</p>
+
+<p>Por lo anterior, los logs que se vean en el laboratorio no coincidirán con los mostrados en esta presentación.</p>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/15">
+<h1>Verificación de caché</h1>
+
+<pre><code>root@cdn-africa:~# ls -lh /var/cache/nginx/
+total 0
+
+root@cdn-america:~# ls -lh /var/cache/nginx/
+total 0
+
+root@cdn-asia:~# ls -lh /var/cache/nginx/
+total 0
+
+root@cdn-europa:~# ls -lh /var/cache/nginx/
+total 0
+</code></pre>
+
+<p>En este punto se realiza el acceso al sitio www.redes.unlp desde el cliente
+Argentina.</p>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/16">
+<h1>Logs del servidor web</h1>
+
+<pre><code><code>root@cdn-www:~# tail -f /var/log/nginx/wordpress-access.log
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET / HTTP/1.1" 200 2759 "-"
+"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.2 HTTP/1.0"
+200 22680 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64;
+rv:31.0) Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/style.css?ver=3.9.2 HTTP/1.0" 200 75703
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1 HTTP/1.0" 200 7200
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-includes/js/jquery/jquery.js?ver=1.11.0 HTTP/1.0" 200 96402
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/js/functions.js?ver=20140319 HTTP/1.0" 200
+3393 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+189.32.120.14 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/uploads/2014/08/CDN_LL_acceso_clientes-300x188.png HTTP/1.0" 200
+22069 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+</code></code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/17">
+<h1>Logs de América</h1>
+
+<pre><code><code>root@cdn-america:~# tail -f /var/log/nginx/access.log
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.2 HTTP/1.1"
+304 0 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/style.css?ver=3.9.2 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-includes/js/jquery/jquery.js?ver=1.11.0 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/themes/twentyfourteen/js/functions.js?ver=20140319 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:20:39:55 +0000] "GET
+/wp-content/uploads/2014/08/CDN_LL_acceso_clientes-300x188.png HTTP/1.0" 200
+22069 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+</code></code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/18">
+<h1>Caché de América</h1>
+
+<pre><code><code>root@cdn-america:~# ls -lh /var/cache/nginx/
+total 232K
+-rw------- 1 www-data www-data  23K Aug 31 20:39 4cc6a94f110409edd133cc03f44c3c41
+-rw------- 1 www-data www-data 3.7K Aug 31 20:39 4fb6e062da05d1bb0f629528ed3c009e
+-rw------- 1 www-data www-data  22K Aug 31 20:39 5340bd0fef34cb5228d746c5d5e96732
+-rw------- 1 www-data www-data 7.4K Aug 31 20:39 a1906fec651d253e058df6e90534936e
+-rw------- 1 www-data www-data  75K Aug 31 20:39 d339df79a142ffe55db8e46797d27c29
+-rw------- 1 www-data www-data  95K Aug 31 20:39 e06d67fc53f9f40412d1181595d361e7
+
+root@cdn-america:~# head -19 /var/cache/nginx/4fb6e062da05d1bb0f629528ed3c009e |
+tail -18
+KEY:
+http://www.redes.unlp/wp-content/themes/twentyfourteen/js/functions.js?ver=20140319
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 31 Aug 2014 20:39:55 GMT
+Content-Type: application/x-javascript
+Content-Length: 3393
+Last-Modified: Thu, 28 Aug 2014 05:36:17 GMT
+Connection: close
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+
+/**
+ * Theme functions file
+ *
+ * Contains handlers for navigation, accessibility, header sizing
+ * footer widgets and Featured Content slider
+ *
+ */
+
+</code></code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/19">
+<h1>Logs del servidor web</h1>
+
+<p>Se vuelven a verificar los logs luego de un nuevo acceso desde el cliente Argentina al sitio www.redes.unlp</p>
+
+<pre><code><code>root@cdn-www:~# tail -f /var/log/nginx/wordpress-access.log
+190.205.40.10 - - [31/Aug/2014:21:37:48 +0000] "GET / HTTP/1.1" 200 2760 "-"
+"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0"
+</code></code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/20">
+<h1>Logs de América</h1>
+
+<pre><code><code>root@cdn-america:~# tail -f /var/log/nginx/access.log
+190.205.40.10 - - [31/Aug/2014:21:37:47 +0000] "GET
+/wp-content/themes/twentyfourteen/genericons/genericons.css?ver=3.0.2 HTTP/1.1"
+304 0 "http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:21:37:47 +0000] "GET
+/wp-content/themes/twentyfourteen/style.css?ver=3.9.2 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:21:37:47 +0000] "GET
+/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:21:37:47 +0000] "GET
+/wp-includes/js/jquery/jquery.js?ver=1.11.0 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:21:37:47 +0000] "GET
+/wp-content/themes/twentyfourteen/js/functions.js?ver=20140319 HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+
+190.205.40.10 - - [31/Aug/2014:21:37:48 +0000] "GET
+/wp-content/uploads/2014/08/CDN_LL_acceso_clientes-300x188.png HTTP/1.1" 304 0
+"http://www.redes.unlp/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:31.0)
+Gecko/20100101 Firefox/31.0"
+</code></code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/21">
+<h1>Posibles extensiones</h1>
+
+<ul>
+<li>Reemplazar las vistas por eDNS end-client-subnet.</li>
+<li>Implementar Varnish para caché en memoria de recursos y páginas.</li>
+<li>Estructura jerárquica para minimizar los accesos al servidor de origen desde
+los servidores de la CDN.</li>
+<li>¿Otras ideas?</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="02-laboratorio/01_slide/22">
+<h1>¿Preguntas?</h1>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="03-labioguia/01_slide/1">
+<h1>Content Delivery Networks (CDN)</h1>
+
+<h2>Caso de análisis: La Bioguía</h2>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/2">
+<h1>Temas</h1>
+
+<ul>
+<li>¿Qué es La Bioguía?</li>
+<li>Problemática inicial.</li>
+<li>Optimización del servicio.</li>
+<li>Implementación de la CDN.</li>
+<li>Problemática actual.</li>
+<li>Conclusiones.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/3">
+<h1>¿Qué es La Bioguía?</h1>
+
+<p>"<a href="http://www.labioguia.com">La Bioguía</a> es el portal y la comunidad digital más grande de habla hispana de
+la nueva cultura sustentable."</p>
+
+<p><img src="./file/03-labioguia/bioguia-face.png" alt="La Bioguía"></p>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/4">
+<h1>Problemática inicial</h1>
+
+<ul>
+<li>El máximo de visitantes simultáneos del sitio no superaba los 60.</li>
+<li>Se necesitaba soportar 4.000 visitantes simultáneos.</li>
+<li>Página de Facebook con más de 1.000.000 de me gusta.</li>
+<li>Picos importantes en períodos breves de tiempo (al publicar un enlace en
+Facebook).</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/5">
+<h1>Optimización del servicio</h1>
+
+<ul>
+<li>Contratar un servidor más grande (16GB RAM, 6 núcleos).</li>
+<li>Adquirir ancho de banda adicional (35Mbps de subida).</li>
+<li>Realizar ajustes a la página para disminuir su tamaño.</li>
+<li>Instalar Nginx, PHP-FPM, Varnish y optimizar varios parámetros de la BBDD y
+del sistema operativo.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="03-labioguia/01_slide/6">
+<h1>Un cliente feliz</h1>
+
+<p>Con todo el trabajo realizado se logran alcanzar los 4.000 visitantes
+simultáneos, pero el techo cambió.</p>
+
+<ul>
+<li>Se satura el ancho de banda al tiempo que la memoria y la capacidad de cómputo
+del servidor se desperdician.</li>
+</ul>
+</div>
+</div>
+</body></html><html><body>
+<div id="03-labioguia/01_slide" class="slide center" data-transition="none">
+<div class="content center" ref="03-labioguia/01_slide/7">
+<h1>¿Preguntas?</h1>
+</div>
+</div>
+</body></html></div>
+<div id="pauseScreen">
+  PAUSED
+</div>
+
+</body>
+</html>
