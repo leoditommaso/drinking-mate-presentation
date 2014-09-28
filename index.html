@@ -520,6 +520,20 @@ Leandro Di Tommaso</p>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
 <div class="content smbullets" ref="02-laboratorio/01_slide/15">
+<h1>Resolución de nombres</h1>
+
+<pre><code>root@cdn-argentina:~$ host www.redes.unlp
+www.redes.unlp has address 190.205.40.3
+
+root@cdn-argentina:~$ host static.redes.unlp
+static.redes.unlp is an alias for america.redes.unlp.
+america.redes.unlp has address 189.32.120.14
+</code></pre>
+</div>
+</div>
+</body></html><html><body>
+<div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
+<div class="content smbullets" ref="02-laboratorio/01_slide/16">
 <h1>Verificación de caché</h1>
 
 <pre><code>root@cdn-africa:~# ls -lh /var/cache/nginx/
@@ -541,7 +555,7 @@ Argentina.</p>
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/16">
+<div class="content smbullets" ref="02-laboratorio/01_slide/17">
 <h1>Logs del servidor web</h1>
 
 <pre><code><code>root@cdn-www:~# tail -f /var/log/nginx/wordpress-access.log
@@ -582,7 +596,7 @@ Gecko/20100101 Firefox/31.0"
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/17">
+<div class="content smbullets" ref="02-laboratorio/01_slide/18">
 <h1>Logs de América</h1>
 
 <pre><code><code>root@cdn-america:~# tail -f /var/log/nginx/access.log
@@ -620,7 +634,7 @@ Gecko/20100101 Firefox/31.0"
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/18">
+<div class="content smbullets" ref="02-laboratorio/01_slide/19">
 <h1>Caché de América</h1>
 
 <pre><code><code>root@cdn-america:~# ls -lh /var/cache/nginx/
@@ -659,7 +673,7 @@ Accept-Ranges: bytes
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/19">
+<div class="content smbullets" ref="02-laboratorio/01_slide/20">
 <h1>Logs del servidor web</h1>
 
 <p>Se vuelven a verificar los logs luego de un nuevo acceso desde el cliente Argentina al sitio www.redes.unlp</p>
@@ -672,7 +686,7 @@ Accept-Ranges: bytes
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/20">
+<div class="content smbullets" ref="02-laboratorio/01_slide/21">
 <h1>Logs de América</h1>
 
 <pre><code><code>root@cdn-america:~# tail -f /var/log/nginx/access.log
@@ -710,7 +724,7 @@ Gecko/20100101 Firefox/31.0"
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide smbullets" data-transition="uncover">
-<div class="content smbullets" ref="02-laboratorio/01_slide/21">
+<div class="content smbullets" ref="02-laboratorio/01_slide/22">
 <h1>Posibles extensiones</h1>
 
 <ul>
@@ -724,7 +738,7 @@ los servidores de la CDN.</li>
 </div>
 </body></html><html><body>
 <div id="02-laboratorio/01_slide" class="slide center" data-transition="none">
-<div class="content center" ref="02-laboratorio/01_slide/22">
+<div class="content center" ref="02-laboratorio/01_slide/23">
 <h1>¿Preguntas?</h1>
 </div>
 </div>
