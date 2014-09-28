@@ -115,6 +115,19 @@ Las IP que se muestran en los logs de la presentación fueron modificadas a mano
 
 Por lo anterior, los logs que se vean en el laboratorio no coincidirán con los mostrados en esta presentación.
 
+
+!SLIDE smbullets transition=uncover
+# Resolución de nombres
+
+<pre><code>root@cdn-argentina:~$ host www.redes.unlp
+www.redes.unlp has address 190.205.40.3
+
+root@cdn-argentina:~$ host static.redes.unlp
+static.redes.unlp is an alias for america.redes.unlp.
+america.redes.unlp has address 189.32.120.14
+</code></pre>
+
+
 !SLIDE smbullets transition=uncover
 # Verificación de caché
 
