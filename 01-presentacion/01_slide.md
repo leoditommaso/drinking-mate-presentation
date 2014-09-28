@@ -9,11 +9,13 @@
 Leandro Di Tommaso
 
 [![leandro.ditommaso@mikroways.net](email.png)](mailto:leandro.ditommaso@mikroways.net "leandro.ditommaso@mikroways.net")
-[![mikroways](wordpress.png)](http://www.mikroways.net "mikroways")
+[![mikroways](mikroways.png)](http://www.mikroways.net "mikroways")
 [![github](github.png)](https://github.com/leoditommaso "github")
 [![linkedin](linkedin.png)](http://ar.linkedin.com/in/leandroditommaso "linkedin")
 [![twitter](twitter.png)](https://twitter.com/leoditommaso "twitter")
 [![licencia](creative-common.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es "licencia")
+
+Esta presentacion: [http://leoditommaso.github.io/drinking-mate-presentation/](http://leoditommaso.github.io/drinking-mate-presentation/)
 
 
 !SLIDE smbullets transition=uncover
@@ -145,7 +147,6 @@ Se debe dirigir al cliente al servidor más conveniente. Existen dos maneras par
 !SLIDE smbullets transition=uncover
 # Referencias #
 
-* [Esta presentación](http://leoditommaso.github.io/drinking-mate-presentation/)
 * [Client subnet in DNS request](http://tools.ietf.org/id/draft-vandergaast-edns-client-subnet-02.html)
 * [How to test your CDN before go live](http://www.cdnplanet.com/blog/how-test-your-cdn-before-go-live/)
 * [Rolling your own CDN](http://www.scalescale.com/rolling-your-own-cdn-build-a-3-continent-cdn-for-25-in-1-hour/)
